@@ -5,6 +5,7 @@ services:
     build: .
     environment:
       FLASK_ENV: development
+      FLASK_APP: src
     ports:
       - 5000:5000
     volumes:
