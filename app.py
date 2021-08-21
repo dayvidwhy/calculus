@@ -32,3 +32,19 @@ def addMany():
     return {
         "result": result
     }
+
+"""
+    Accepts several numbers for multiplication
+"""
+@app.route("/multiply", methods=["POST"])
+def multiplyMany():
+    values = request.get_json()
+    result = 1
+    try:
+        for value in values["values"]:
+            result *= value
+    except Exception as e:
+        result = "Err"
+    return {
+        "result": result
+    }
