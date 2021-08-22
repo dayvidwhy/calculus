@@ -1,5 +1,5 @@
 # Calculus
-Fragment looks to be an API that receives fragments and replies with a whole response.
+Calculus looks to be an API that receives calculation requests and replies with an answer.
 
 ## Development
 You can use docker compose to start up the development environment.
